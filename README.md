@@ -1,3 +1,19 @@
+[pkgdown website](https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/)
+
+[Original gridExtra repo](https://github.com/baptiste/gridExtra)
+
+Five customized things:
+
+- changed the bootswatch theme to `cerulean`
+- changed the background, foreground, and primary colours of the site
+- changed the base font of the site
+- changed the spacing between the nav bar and the main text
+- changed the theme of the code blocks
+
+
+
+
+
 [![Build Status](https://travis-ci.org/baptiste/gridextra.svg?branch=master)](https://travis-ci.org/baptiste/gridextra)
 [![](http://www.r-pkg.org/badges/version/gridExtra)](https://CRAN.R-project.org/package=gridExtra )
 [![](http://cranlogs.r-pkg.org/badges/grand-total/gridExtra)](http://cran.rstudio.com/web/packages/gridExtra/index.html)
@@ -9,3 +25,5 @@ Provides a number of user-level functions to work with "grid" graphics, notably 
 See the [gridExtra wiki](https://github.com/baptiste/gridextra/wiki) for additional information, answers to Frequently Asked Questions, and the latest vignettes.
 
 [![DOI](https://zenodo.org/badge/5734/baptiste/gridextra.png)](http://dx.doi.org/10.5281/zenodo.11422)
+
+
