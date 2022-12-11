@@ -1,6 +1,8 @@
-[pkgdown website](https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/)
+# gridExtra
 
-[Original gridExtra repo](https://github.com/baptiste/gridExtra)
+[pkgdown website](https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/), built by Xin Zhi (Cindy) Fang.
+
+[Original gridExtra repo](https://github.com/baptiste/gridExtra), built by Baptiste Auguie.
 
 Five customized things:
 
@@ -10,8 +12,18 @@ Five customized things:
 - changed the spacing between the nav bar and the main text
 - changed the theme of the code blocks
 
-
-
+Example usage:
+```
+library(gridExtra)
+library(grid)
+library(ggplot2)
+library(lattice)
+p <- qplot(1,1)
+p2 <- xyplot(1~1)
+r <- rectGrob(gp=gpar(fill="grey90"))
+t <- textGrob("text")
+grid.arrange(t, p, p2, r, ncol=2)
+```
 
 
 [![Build Status](https://travis-ci.org/baptiste/gridextra.svg?branch=master)](https://travis-ci.org/baptiste/gridextra)
