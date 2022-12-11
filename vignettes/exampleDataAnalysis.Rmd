@@ -72,6 +72,9 @@ for (genre in genres){
 purrr::invoke("grid.arrange", c(myGrobs, ncol=3))
 ```
 
+*Figure 1:* Scatter plot of each track's danceability against the track's popularity, split by genre.
+
+
 It seems that across all genres except edm, the popularity of a song increases as the danceability increases.This is surprising because I thought edm listeners really enjoy dancing.
 
 Next, let's just take a quick look of the average of all features across the different genres:
@@ -101,8 +104,13 @@ ggplot(spMeansPlot, aes(x=features, y=averageValue))+
   geom_bar(stat="identity")+
   facet_wrap(~ stringr::str_to_title(genre))+
   theme(axis.text.x=element_text(angle = 90))+
-  ylab("Average Value")
+  ylab("Average Value")+
+  ggtitle("Average value of \nfeatures across genres")
 ```
+
+*Figure 2*: Bar plot of average feature value for each genre.
+
+
 Now let's look at the average popularity of each genre:
 ```{r}
 spotifyPop <- spotify %>%
@@ -115,9 +123,16 @@ ggplot(spotifyPop, aes(x=genre, y=averagePop))+
   geom_bar(stat="identity")+
   xlab("Genre")+
   ylab("Average popularity")+
-  ggtitle("Average popularity of songs in each genre")
+  ggtitle("Average popularity of songs\nin each genre")
 ```
-Unsurprisingly, pop is the most popular genre, and edm is the least popular on average.
+
+*Figure 3:* Bar plot of the average popularity for each genre.
+
+
+Unsurprisingly, pop is the most popular genre, and edm is the least popular on average. 
+
+Overall, it seems that regardless of genre, listeners really enjoy danceable music. As well, across genres, it seems like the features of the music do not differ much, although Rap does have a higher average speechiness value than other genres.
+
 # Functions used:
 
 `dplyr`: select, filter, group_by, group_modify
@@ -128,6 +143,8 @@ Unsurprisingly, pop is the most popular genre, and edm is the least popular on a
 
 `purrr`: invoke, map
 
+`ggplot2`: geom_point, geom_smooth, geom_bar, facet_wrap
+
 `gridExtra` (R package for which I built the site): grid.arrange. grid.table
 
-`ggplot2`: geom_point, geom_smooth, geom_bar, facet_wrap
+
