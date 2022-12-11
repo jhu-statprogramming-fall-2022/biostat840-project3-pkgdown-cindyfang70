@@ -12,6 +12,14 @@ Five customized things:
 - changed the spacing between the nav bar and the main text
 - changed the theme of the code blocks
 
+Exported functions:
+
+- `arrangeGrob`: arrange multiple plots on a page
+- `bind`: perform `rbind` or `cbind` on `gtable` objects
+- `combine`: combine `gtable` objects based on their row or column names.
+- `ngongGrob`: create regular polygon `grob` objects that can be rotated and stretched.
+- `tableGrob`: graphically display text `grob` objects.
+
 Example usage:
 ```
 library(gridExtra)
