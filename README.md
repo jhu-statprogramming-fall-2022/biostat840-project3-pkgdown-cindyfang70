@@ -32,7 +32,7 @@ r <- rectGrob(gp=gpar(fill="grey90"))
 t <- textGrob("text")
 grid.arrange(t, p, p2, r, ncol=2)
 ```
-
+Example taken from `gridExtra` `arrangeGrob` vignette.
 
 [![Build Status](https://travis-ci.org/baptiste/gridextra.svg?branch=master)](https://travis-ci.org/baptiste/gridextra)
 [![](http://www.r-pkg.org/badges/version/gridExtra)](https://CRAN.R-project.org/package=gridExtra )
