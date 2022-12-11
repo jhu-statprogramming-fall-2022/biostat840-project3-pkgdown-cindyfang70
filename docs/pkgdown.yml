@@ -1,0 +1,10 @@
+pandoc: '2.18'
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  arrangeGrob: arrangeGrob.html
+  gtable: gtable.html
+  ngonGrob: ngonGrob.html
+  tableGrob: tableGrob.html
+last_built: 2022-12-11T20:38Z
+
