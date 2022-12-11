@@ -1,6 +1,6 @@
 # gridExtra
 
-[pkgdown website](https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/), built by Xin Zhi (Cindy) Fang.
+Link to built by for this project: [https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/](https://jhu-statprogramming-fall-2022.github.io/biostat840-project3-pkgdown-cindyfang70/) 
 
 [Original gridExtra repo](https://github.com/baptiste/gridExtra), built by Baptiste Auguie.
 
