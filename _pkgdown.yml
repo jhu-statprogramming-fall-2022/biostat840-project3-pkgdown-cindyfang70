@@ -1,4 +1,12 @@
 url: ~
 template:
   bootstrap: 5
+  bootswatch: cerulean
+  theme: ayu-mirage
+  bslib:
+    bg: "#202123"
+    fg: "#B8BCC2"
+    primary: "#306cc9"
+    base_font: {google: "JetBrains Mono"}
+    pkgdown-nav-height: 200px
 
